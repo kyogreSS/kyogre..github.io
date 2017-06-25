@@ -97,14 +97,14 @@
 <meta property="og:url" content="http://kyogreSS.github.io/2017/06/25/Atom使用心得（二）/index.html">
 <meta property="og:site_name" content="不破小子">
 <meta property="og:description" content="Atom使用心得（二）本以为Atom编辑器就这么告一段落了，结果还是有很多坑。我遇到了几个小问题，这里记录下。   自动换行问题这个自动换行，是说我一行代码超过了当前页面，自动到下一行编辑，而不是出现滚动条，把不管多长的东西放在一行。这个要在setting里的editor选项里，勾选soft wrap选项，这样： 这个大概的意思是：在超过屏幕长度的地方换行。如果soft wrap at prefe">
-<meta property="og:image" content="http://kyogress.github.io/image/soft_wrap.png">
-<meta property="og:image" content="http://kyogress.github.io/image/whitespace.png">
-<meta property="og:image" content="http://kyogress.github.io/image/whitespacesettings.png">
-<meta property="og:updated_time" content="2017-06-25T14:56:11.674Z">
+<meta property="og:image" content="http://kyogress.github.io/images/soft_wrap.png">
+<meta property="og:image" content="http://kyogress.github.io/images/whitespace.png">
+<meta property="og:image" content="http://kyogress.github.io/images/whitespacesettings.png">
+<meta property="og:updated_time" content="2017-06-25T15:00:12.103Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Atom使用心得（二）">
 <meta name="twitter:description" content="Atom使用心得（二）本以为Atom编辑器就这么告一段落了，结果还是有很多坑。我遇到了几个小问题，这里记录下。   自动换行问题这个自动换行，是说我一行代码超过了当前页面，自动到下一行编辑，而不是出现滚动条，把不管多长的东西放在一行。这个要在setting里的editor选项里，勾选soft wrap选项，这样： 这个大概的意思是：在超过屏幕长度的地方换行。如果soft wrap at prefe">
-<meta name="twitter:image" content="http://kyogress.github.io/image/soft_wrap.png">
+<meta name="twitter:image" content="http://kyogress.github.io/images/soft_wrap.png">
 
 
 
@@ -204,7 +204,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -214,7 +214,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -284,7 +284,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-25T22:55:39+08:00">
                 2017-06-25
@@ -322,9 +322,9 @@
 
       
         <h1 id="Atom使用心得（二）"><a href="#Atom使用心得（二）" class="headerlink" title="Atom使用心得（二）"></a>Atom使用心得（二）</h1><p>本以为Atom编辑器就这么告一段落了，结果还是有很多坑。我遇到了几个小问题，这里记录下。  </p>
-<h2 id="自动换行问题"><a href="#自动换行问题" class="headerlink" title="自动换行问题"></a>自动换行问题</h2><p>这个自动换行，是说我一行代码超过了当前页面，自动到下一行编辑，而不是出现滚动条，把不管多长的东西放在一行。<br>这个要在<code>setting</code>里的<code>editor</code>选项里，勾选<code>soft wrap</code>选项，这样：<br><img src="/image/soft_wrap.png" alt="1"></p>
+<h2 id="自动换行问题"><a href="#自动换行问题" class="headerlink" title="自动换行问题"></a>自动换行问题</h2><p>这个自动换行，是说我一行代码超过了当前页面，自动到下一行编辑，而不是出现滚动条，把不管多长的东西放在一行。<br>这个要在<code>setting</code>里的<code>editor</code>选项里，勾选<code>soft wrap</code>选项，这样：<br><img src="/images/soft_wrap.png" alt="1"></p>
 <p>这个大概的意思是：在超过屏幕长度的地方换行。如果<code>soft wrap at preferred line length</code>这个选项勾选了，就在超过这个选项设置的长度的地方换行。  </p>
-<h2 id="markdown保存的时候后面空格自动去掉"><a href="#markdown保存的时候后面空格自动去掉" class="headerlink" title="markdown保存的时候后面空格自动去掉"></a>markdown保存的时候后面空格自动去掉</h2><p>markdown语法里，两个空格+回车是开始新的一行。然而有时候如果不设置，一保存那俩空格就没了。<br>这个要在packages里设置。打开<code>setting</code>里的<code>packages</code>选项，在<code>core packages</code>里面找<code>whitespace</code>这个包：<br><img src="/image/whitespace.png" alt="2"><br>点setting，找到<code>remove trailing whitespace</code>和<code>ensure single trailing newline</code>这两个选项，把它们去掉。<br><img src="/image/whitespacesettings.png" alt="3"><br>明明有<code>keep markdown line break whitespace</code>这个选项，在markdwon文件里居然不生效，这是神奇。<br>这两句，<code>remove trailing whitespace</code>的意思是去掉行后面多余的空格。如果要给单一语言设置，用它给的方式。<br><code>ensure single trailing newline</code>的意思是如果文档流在保存的时候没有新一行的标志（回车吧应该），就自动加上，如果多于一个，就只保留一个。<br>这两样设置好，应该就没问题了。弄懂这几个，如果其他的文件再出什么问题，再根据需要改就好了。</p>
+<h2 id="markdown保存的时候后面空格自动去掉"><a href="#markdown保存的时候后面空格自动去掉" class="headerlink" title="markdown保存的时候后面空格自动去掉"></a>markdown保存的时候后面空格自动去掉</h2><p>markdown语法里，两个空格+回车是开始新的一行。然而有时候如果不设置，一保存那俩空格就没了。<br>这个要在packages里设置。打开<code>setting</code>里的<code>packages</code>选项，在<code>core packages</code>里面找<code>whitespace</code>这个包：<br><img src="/images/whitespace.png" alt="2"><br>点setting，找到<code>remove trailing whitespace</code>和<code>ensure single trailing newline</code>这两个选项，把它们去掉。<br><img src="/images/whitespacesettings.png" alt="3"><br>明明有<code>keep markdown line break whitespace</code>这个选项，在markdwon文件里居然不生效，这是神奇。<br>这两句，<code>remove trailing whitespace</code>的意思是去掉行后面多余的空格。如果要给单一语言设置，用它给的方式。<br><code>ensure single trailing newline</code>的意思是如果文档流在保存的时候没有新一行的标志（回车吧应该），就自动加上，如果多于一个，就只保留一个。<br>这两样设置好，应该就没问题了。弄懂这几个，如果其他的文件再出什么问题，再根据需要改就好了。</p>
 
       
     </div>
@@ -422,10 +422,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
+            Übersicht
           </li>
         </ul>
       
@@ -446,7 +446,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">4</span>
-                <span class="site-state-item-name">posts</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
@@ -516,7 +516,7 @@
 
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
