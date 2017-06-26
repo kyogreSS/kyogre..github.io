@@ -90,15 +90,17 @@
 
 
 
-<meta name="description" content="前端学习笔记">
-<meta property="og:type" content="website">
-<meta property="og:title" content="不破小子">
-<meta property="og:url" content="http://kyogreSS.github.io/index.html">
+<meta name="description" content="react-router整理 其实之前我已经看过一遍了，而且照着官方示例库敲了一遍。之后做别的事去了。等回过神来，半个月过去，东西忘得一干二净。一句也写不出来了。这还了得，毛骨悚然。必须想措施来防止遗忘了。  官方示例库：https://github.com/reactjs/react-router-tutorial.git 渲染一个路由和react的用法一样。React和Vue的区别，最重要的一">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="react-router整理">
+<meta property="og:url" content="http://kyogreSS.github.io/2017/06/26/react-router整理/index.html">
 <meta property="og:site_name" content="不破小子">
-<meta property="og:description" content="前端学习笔记">
+<meta property="og:description" content="react-router整理 其实之前我已经看过一遍了，而且照着官方示例库敲了一遍。之后做别的事去了。等回过神来，半个月过去，东西忘得一干二净。一句也写不出来了。这还了得，毛骨悚然。必须想措施来防止遗忘了。  官方示例库：https://github.com/reactjs/react-router-tutorial.git 渲染一个路由和react的用法一样。React和Vue的区别，最重要的一">
+<meta property="og:updated_time" content="2017-06-26T13:49:23.519Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="不破小子">
-<meta name="twitter:description" content="前端学习笔记">
+<meta name="twitter:title" content="react-router整理">
+<meta name="twitter:description" content="react-router整理 其实之前我已经看过一遍了，而且照着官方示例库敲了一遍。之后做别的事去了。等回过神来，半个月过去，东西忘得一干二净。一句也写不出来了。这还了得，毛骨悚然。必须想措施来防止遗忘了。  官方示例库：https://github.com/reactjs/react-router-tutorial.git 渲染一个路由和react的用法一样。React和Vue的区别，最重要的一">
 
 
 
@@ -126,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://kyogreSS.github.io/"/>
+  <link rel="canonical" href="http://kyogreSS.github.io/2017/06/26/react-router整理/"/>
 
 
 
 
 
-  <title>不破小子</title>
+  <title>react-router整理 | 不破小子</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="Chinese">
@@ -157,9 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -242,9 +242,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -270,9 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/26/react-router整理/" itemprop="url">react-router整理</a></h1>
+          <h1 class="post-title" itemprop="name headline">react-router整理</h1>
         
 
         <div class="post-meta">
@@ -319,9 +317,7 @@
       
 
       
-        
-          
-            <h1 id="react-router整理"><a href="#react-router整理" class="headerlink" title="react-router整理"></a>react-router整理</h1><blockquote>
+        <h1 id="react-router整理"><a href="#react-router整理" class="headerlink" title="react-router整理"></a>react-router整理</h1><blockquote>
 <p>其实之前我已经看过一遍了，而且照着官方示例库敲了一遍。之后做别的事去了。等回过神来，半个月过去，东西忘得一干二净。一句也写不出来了。这还了得，毛骨悚然。必须想措施来防止遗忘了。</p>
 </blockquote>
 <p>官方示例库：<a href="https://github.com/reactjs/react-router-tutorial.git" target="_blank" rel="external">https://github.com/reactjs/react-router-tutorial.git</a></p>
@@ -363,20 +359,27 @@
 <p>这个路由可以用相对路径，它自动继承父组件的路径。<br>有个特点：一旦发现匹配的路由，就不再匹配其他规则了。所以说，具体的绝对路由要放在通配路由上面，不然容易匹配不到。，阮一峰的例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;Router&gt;</div><div class="line">  &lt;Route path=&quot;/:userName/:id&quot; component=&#123;UserPage&#125;/&gt;</div><div class="line">  &lt;Route path=&quot;/about/me&quot; component=&#123;About&#125;/&gt;</div><div class="line">&lt;/Router&gt;</div></pre></td></tr></table></figure></p>
 <p>应该先匹配<code>/about/me</code>，再匹配其他，不然容易匹不到。<br>获取当前路由的参数，用this.props.location.query.name来获取。  </p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -384,541 +387,38 @@
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://kyogreSS.github.io/2017/06/25/hexo搭建博客/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="kyogreSS">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不破小子">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/25/hexo搭建博客/" itemprop="url">hexo搭建博客</a></h1>
-        
+      
 
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-25T22:56:58+08:00">
-                2017-06-25
-              </time>
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
+              <a href="/2017/06/25/hexo搭建博客/" rel="prev" title="hexo搭建博客">
+                hexo搭建博客 <i class="fa fa-chevron-right"></i>
+              </a>
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="使用hexo搭建自己的博客"><a href="#使用hexo搭建自己的博客" class="headerlink" title="使用hexo搭建自己的博客"></a>使用hexo搭建自己的博客</h1><blockquote>
-<p>也是被人安利过来的，用hexo配合gitpage在github上搭建一个静态的博客。每次上传文章什么的都要自己查一查文档，还没到自己修改样式的程度。虽然熟练了也就应该轻车熟路了，但对我来说，最好的方式还是做笔记。<br>不做笔记不会玩</p>
-</blockquote>
-<p>用git来写博客，可是件相当划算的事。有个看起来还可以的域名，有300M的免费空间，有还算相对稳定的服务器，还有各种搭建工具。关键是这些都是免费的，真真是件极好的事。  </p>
-<h2 id="把博客搭起来"><a href="#把博客搭起来" class="headerlink" title="把博客搭起来"></a>把博客搭起来</h2><h3 id="第一步：创建一个git账户"><a href="#第一步：创建一个git账户" class="headerlink" title="第一步：创建一个git账户"></a>第一步：创建一个git账户</h3><p>这是比较废话的一步。如果这个都没有，哪来的git博客。之所以写下来是因为gitpage要用用户名来做博客域名的，要想一个能长久用的好听的域名！  </p>
-<h3 id="第二步：创建一个仓库"><a href="#第二步：创建一个仓库" class="headerlink" title="第二步：创建一个仓库"></a>第二步：创建一个仓库</h3><p>起个名字叫<code>用户名.github.io</code>的仓库。把博客的网页放进这个仓库里，在访问这个域名的时候，就能自动访问到<code>index.html</code>页面了。  </p>
-<h3 id="第三步：自己写个网页或者用工具"><a href="#第三步：自己写个网页或者用工具" class="headerlink" title="第三步：自己写个网页或者用工具"></a>第三步：自己写个网页或者用工具</h3><p>仓库已经搭好了，能自动访问index.html，我们就可以自己写个全套的网站了。还有很多工具帮助我们生成这些网页，我们只要运行几行命令就能自动把网站搭起来。这些工具里我用的是Hexo。<br>标题写的怪怪的……明明就是hexo的笔记，还非得给其他工具留说法。<br>嘛，接下来就是hexo的用法了。  </p>
-<h2 id="hexo使用方法"><a href="#hexo使用方法" class="headerlink" title="hexo使用方法"></a>hexo使用方法</h2><p>简单来说，hexo是一个把主题、文章等内容生成一个网站的工具。我们把hexo下载下来，发现是这样的：<br><img src="/images/hexo_file.png" alt="1"><br>最终生成并传输到仓库里的文件，是这样的：<br><img src="/images/hexo_index_file.png" alt="2"><br>可以从中得知，我们用它来写入一些‘设定’，它根据这些‘设定’来生成我们需要的网站，一个包含index.html的网站。<br>首先来安装它：</p>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>安装之前，要先把git和nodejs安装下来。好理解，hexo是跑在node环境下的项目，而且要把内容传到git上面，要先下好这两个。如何下载，百度谷歌一下，找到他们俩的官网，download，都是免费的。也可以用纯命令行来下载，看起来高端些，但我不干。<br>安装完后把自动搭建工具下载下来，用npm下载：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
-<p>全局安装一个<code>hexo-cli</code>的命令。以后就可以用hexo命令了。</p>
-<h3 id="新建站"><a href="#新建站" class="headerlink" title="新建站"></a>新建站</h3><p>安装完<code>hexo-cli</code>之后，就可以用<code>hexo</code>的各种命令了。我们要新建一个博客项目，这么写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init 项目名</div><div class="line">$ cd 项目名</div><div class="line">$ npm install</div></pre></td></tr></table></figure></p>
-<p>如果<code>hexo init</code>不加别的，就是在当前文件夹下初始化一个项目，不用cd进去了。<code>npm install</code>下载完所有的依赖后，整个项目就能使用了。</p>
-<p>先写到这。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://kyogreSS.github.io/2017/06/25/Atom使用心得（二）/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="kyogreSS">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不破小子">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/25/Atom使用心得（二）/" itemprop="url">Atom使用心得（二）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-25T22:55:39+08:00">
-                2017-06-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Atom使用心得（二）"><a href="#Atom使用心得（二）" class="headerlink" title="Atom使用心得（二）"></a>Atom使用心得（二）</h1><p>本以为Atom编辑器就这么告一段落了，结果还是有很多坑。我遇到了几个小问题，这里记录下。  </p>
-<h2 id="自动换行问题"><a href="#自动换行问题" class="headerlink" title="自动换行问题"></a>自动换行问题</h2><p>这个自动换行，是说我一行代码超过了当前页面，自动到下一行编辑，而不是出现滚动条，把不管多长的东西放在一行。<br>这个要在<code>setting</code>里的<code>editor</code>选项里，勾选<code>soft wrap</code>选项，这样：<br><img src="/images/soft_wrap.png" alt="1"></p>
-<p>这个大概的意思是：在超过屏幕长度的地方换行。如果<code>soft wrap at preferred line length</code>这个选项勾选了，就在超过这个选项设置的长度的地方换行。  </p>
-<h2 id="markdown保存的时候后面空格自动去掉"><a href="#markdown保存的时候后面空格自动去掉" class="headerlink" title="markdown保存的时候后面空格自动去掉"></a>markdown保存的时候后面空格自动去掉</h2><p>markdown语法里，两个空格+回车是开始新的一行。然而有时候如果不设置，一保存那俩空格就没了。<br>这个要在packages里设置。打开<code>setting</code>里的<code>packages</code>选项，在<code>core packages</code>里面找<code>whitespace</code>这个包：<br><img src="/images/whitespace.png" alt="2"><br>点setting，找到<code>remove trailing whitespace</code>和<code>ensure single trailing newline</code>这两个选项，把它们去掉。<br><img src="/images/whitespacesettings.png" alt="3"><br>明明有<code>keep markdown line break whitespace</code>这个选项，在markdwon文件里居然不生效，这是神奇。<br>这两句，<code>remove trailing whitespace</code>的意思是去掉行后面多余的空格。如果要给单一语言设置，用它给的方式。<br><code>ensure single trailing newline</code>的意思是如果文档流在保存的时候没有新一行的标志（回车吧应该），就自动加上，如果多于一个，就只保留一个。<br>这两样设置好，应该就没问题了。弄懂这几个，如果其他的文件再出什么问题，再根据需要改就好了。</p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://kyogreSS.github.io/2017/06/24/Atom使用心得/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="kyogreSS">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不破小子">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/24/Atom使用心得/" itemprop="url">Atom使用心得</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-24T23:03:18+08:00">
-                2017-06-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Atom的使用心得"><a href="#Atom的使用心得" class="headerlink" title="Atom的使用心得"></a>Atom的使用心得</h1><blockquote>
-<p>作为一名新晋前端，一开始接触的编辑器是webstorm。虽然在搜索破解方法的时候觉得挺麻烦，但在使用中的体验真心不错。很多很多快捷键、自动提示等都安装好了，安安心心编代码即可。用了一段时间，又被安利了一波Atom，说什么插件强大，功能多多，符合程序员开源的特性，是轻量级的编辑器，什么文件都能写，速度又快云云。收下安利，下载之。用起来才发现，真JB麻烦，碰到了不少坑。一点点的踩过坑后，倒也觉得还好。这里记下Atom的一些使用心得，不全面，仅供参考。  </p>
-</blockquote>
-<h3 id="Atom的问题之一：插件"><a href="#Atom的问题之一：插件" class="headerlink" title="Atom的问题之一：插件"></a>Atom的问题之一：插件</h3><p>这是Atom最主要的问题了。刚下下来的Atom是个纯净版的编辑器，可以说是想要的功能都没有，跟个记事本一样，完全不适合新手好么。一开始就推荐你用Atom并且不教你怎么安装的人，以后漂流瓶联系吧。<br>虽然atom提供了方便快捷的插件下载方式，在setting里有install选项，可以找到自己想要的包。<br>然而不用一下其他自动化的编辑器，鬼知道有什么包好用呀。<br>也好解决，去百度谷歌一下，有很多推荐插件，开开心心用官方渠道下载，岂不美哉。<br>结果是特喵的下不下来，几率性被墙！于是乎，即使是知道哪个包适合自己用，也很难下载。<br>主要坑在于：1、用什么插件。2、怎么下载。  </p>
-<h5 id="用什么插件"><a href="#用什么插件" class="headerlink" title="用什么插件"></a>用什么插件</h5><p>这个插件分为几种：</p>
-<ol>
-<li>样式类，代码美化、界面美化的。</li>
-<li>简化操作类，代码补全、提示的。</li>
-<li>工具类，git、terminal等。</li>
-<li>其他乱七八糟的，比如程序员鼓励插件。</li>
-</ol>
-<p>第一种，样式类的：</p>
-<ul>
-<li>atom-beautify 顾名思义，代码美化，推荐的最多的一款。</li>
-<li>linter 格式化？排查错误的。</li>
-<li>linter-csslint 排查CSS错误的。</li>
-<li>linter-eslint 排查JS错误的。</li>
-<li>linter-ui-default linter的依赖包吧，下载linter就会提示安装的。</li>
-<li>还有题外话，主题，在Themes里，我用的ONE DARK，黑色。</li>
-</ul>
-<p>第二种，简化操作的：</p>
-<ul>
-<li>autoclose-html 自动闭合html标签。</li>
-<li>emmet 自动生成前端的代码。比如html再按tab，就能生成一些必要的东西。</li>
-</ul>
-<p>第三种，工具类的：</p>
-<ul>
-<li>git-plus 在行里能写git命令，虽然安装了，很少用。</li>
-<li>platformio-ide-terminal 快捷打开终端/CMD。</li>
-<li>open-in-browser 在浏览器里打开你的网页！</li>
-</ul>
-<p>第四种，其他的：</p>
-<ul>
-<li>color-picker 取色器，前端用得到。</li>
-<li>file-icons 文件小图标，让文件列表有更高的标识度。</li>
-<li>minimap 小型代码预览图，用来跳转代码的。</li>
-<li>markdown-preview-plus markdown预览。</li>
-<li>activate-power-mode 代码跳跃！写汉字的时候跳动的有些厉害，晃眼。</li>
-</ul>
-<p>安装的插件在菜单栏Packages里面，需要手动用的可以在里面找，或者右键菜单里找。要是不想要了，在Settings里的Packages里可以卸载、设置、失效。  </p>
-<h5 id="怎么装插件"><a href="#怎么装插件" class="headerlink" title="怎么装插件"></a>怎么装插件</h5><p>我原以为，官方都提供这么方便的途径了，还能出幺蛾子？现在看来，还是太年轻太naive。<br>从插件服务器上下载插件，是通过一个叫apm的东西，apm和npm类似，在下载Atom的时候，这条语句已经安装在计算机里了。<br>但是，服务器在海外，有被墙的风险。即便是我们翻墙了，漂洋过海来下载也会很慢。<br>当初萌新的自己一咬牙一跺脚，花钱翻了墙，还是没能解决下载失败的问题，真是欲哭无泪呀。<br>这个时候，我们就要切换一下源。感谢淘宝团队的巨大贡献，让我们可以用淘宝镜像来下载我们所需的各种依赖包。<br>npm有淘宝镜像，apm也有。<br>设置apm镜像的方式有两种。<br>一是直接修改配置文件。打开atom配置文件：<strong>用户目录/.atom</strong> 中，Windows默认在 <strong>C:\User\用户名</strong> 下，Linux/Mac在 <strong>/home/用户名</strong> 下，编辑.apmrc文件，添加这么一句：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">registry = https://registry.npm.taobao.org</div></pre></td></tr></table></figure></p>
-<p>就ok了。<br>二是用 <strong>命令行</strong> 来写：<br>Windows：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">echo &quot;registry = https://registry.npm.taobao.org&quot; &gt; %UserProfile%\.atom\.apmrc</div></pre></td></tr></table></figure></p>
-<p>Linux/Mac OS X<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">echo &apos;registry = https://registry.npm.taobao.org&apos; &gt; ~/.atom/.apmrc</div></pre></td></tr></table></figure></p>
-<p>就是这样！<br>有一天我要是肉身翻墙了，不想要再翻墙用淘宝镜像了，怎么办？<br>打开配置文件，把那句话删了。  </p>
-<h6 id="如果设置了镜像都不行，怎么办？"><a href="#如果设置了镜像都不行，怎么办？" class="headerlink" title="如果设置了镜像都不行，怎么办？"></a>如果设置了镜像都不行，怎么办？</h6><p>即便是设置了镜像，有时候也会发生下载不了的问题！这个时候，就要用最最原始的git checkout了。<br>Atom的插件基本上在git上有源码。<br>我们搜到一下想要的组件，然后点开，在简介里，有个按钮：<strong>View on Atom.io</strong><br><img src="/images/install_packages.png" alt="1"><br>在它的上面有一行链接，是链接到git上的，直接打开它。<br>或者打开 <strong>View on Atom.io</strong>，会在网页里出现简介，我们又会发现Repo这个按钮，打开一样能到git里。<br><img src="/images/install_packages_2.png" alt="2"><br>到git里面，我们复制一下它的地址。<br><img src="/images/git_clone.png" alt="3"><br>复制完了后，到我们的package文件夹里，一般来说，在.atom文件下，<strong>用户目录/.atom</strong> ，Windows默认在 <strong>C:\User\用户名</strong> 下，Linux/Mac在 <strong>/home/用户名</strong> 下，里面有个packages文件夹，进去，运行git clone命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone 刚复制的地址</div></pre></td></tr></table></figure></p>
-<p>进这个复制下来的文件夹，手动打开也好，cd命令也好，给这个文件安装依赖。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd 刚下下来的文件名</div><div class="line">//在这个文件名下运行这个</div><div class="line">npm install</div></pre></td></tr></table></figure></p>
-<p>这个包就算是安好了！热泪盈眶。</p>
-<h3 id="Atom的问题之二：快捷键"><a href="#Atom的问题之二：快捷键" class="headerlink" title="Atom的问题之二：快捷键"></a>Atom的问题之二：快捷键</h3><p>用惯了webstrom，再用其他的软件，就总想着把快捷键改过来。然而Atom的快捷键设置，是要在文件里书写的。<br>打开设置，里面有个keybindings，这个就是设置快捷键的东西了。我们进入这个界面，发现是这样的：<br><img src="/images/keybindings.png" alt="4"><br>打开那个’your keymap file’，直接写代码设置快捷键，厉害不厉害，有没有很程序员！<br>这个文件里有简单的介绍，这里要写的也不是很深奥，只是能实现最简单的效果就好了。<br>我们先要找到想要实现的效果的命令。比如说，在webstorm里，按住shift+enter是新开始一行，不管光标在哪里。在Atom里是alt+center，这显然不符合我们的习惯，要改掉它。我们在settings的keybindings里找到这行命令：<code>editor:newline-below</code>，字面意思是：在底下新建一行。找到了，然后在keymaps里先写这么一句：<code>atom-text-editor&#39;:</code>这一句是说明这个快捷键在哪里生效，而atom-text-editor是说在atom编辑页面里生效。然后接下来是快捷键+命令，就是这样：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&apos;atom-text-editor&apos;:</div><div class="line">  &apos;shift-enter&apos;: &apos;editor:newline-below&apos;</div></pre></td></tr></table></figure></p>
-<p>在Mac上用久了，会发现command键和PC的ctrl离得太远，用惯了Mac，就想把PC上的ctrl快捷键改成alt，这里把save的快捷键ctrl+s的改成alt+s，代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&apos;body&apos;:</div><div class="line">  &apos;alt-s&apos;:&apos;core:save&apos;</div></pre></td></tr></table></figure></p>
-<p>ok，就这样改。保存重启一下atom就完事了。<br>如果还有其他想改的，去setting里keybindings上找一下原来的键位，第一个是快捷键，第二个是命令，第三个是在哪里用。再按照在那里用：快捷键+命令的格式写在keymap里就可以了。  </p>
-<h3 id="就先到这里吧"><a href="#就先到这里吧" class="headerlink" title="就先到这里吧"></a>就先到这里吧</h3>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://kyogreSS.github.io/2017/05/30/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="kyogreSS">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不破小子">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/05/30/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-30T20:21:13+08:00">
-                2017-05-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -926,6 +426,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -945,8 +449,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -990,6 +503,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#react-router整理"><span class="nav-number">1.</span> <span class="nav-text">react-router整理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#渲染一个路由"><span class="nav-number">1.1.</span> <span class="nav-text">渲染一个路由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#路由跳转"><span class="nav-number">1.2.</span> <span class="nav-text">路由跳转</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深层路由"><span class="nav-number">1.3.</span> <span class="nav-text">深层路由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Link激活的样式"><span class="nav-number">1.4.</span> <span class="nav-text">Link激活的样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#路由参数"><span class="nav-number">1.5.</span> <span class="nav-text">路由参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态-嵌套路由"><span class="nav-number">1.6.</span> <span class="nav-text">动态+嵌套路由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主页路由"><span class="nav-number">1.7.</span> <span class="nav-text">主页路由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主页链接"><span class="nav-number">1.8.</span> <span class="nav-text">主页链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#完美的URL"><span class="nav-number">1.9.</span> <span class="nav-text">完美的URL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#服务端渲染"><span class="nav-number">1.10.</span> <span class="nav-text">服务端渲染</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#跳转路由"><span class="nav-number">1.11.</span> <span class="nav-text">跳转路由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#差点弄混"><span class="nav-number">1.12.</span> <span class="nav-text">差点弄混</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1103,6 +632,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
 
   
 
